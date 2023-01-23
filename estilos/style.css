@@ -1,0 +1,276 @@
+  /**********************************************/
+ /*                 INDICE                     */
+/**********************************************/
+/*
+                1. CONTENIDO
+                2. FORMULARIO
+                3. BOTONES
+                4. IMAGENES
+                5. MENU
+                6. TABLA
+                7. ARREGLITOS
+*/
+
+
+
+
+
+  /**********************************************/
+ /*                CONTENIDO                   */
+/**********************************************/
+
+body {
+    background-image: url(../imagenes/fondo2.jpg) ;
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+div:not(.contenido, .form) {                       /* todo div que no sea contenido*/
+    margin: 15px;
+    padding: 20px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+
+.contenido {
+    max-width: 900px;
+    min-width: 350px;
+    margin: 50px auto 0px;
+    background-size: contain;
+    background-color: rgb(245, 232, 206);
+    border: 1px solid rgb(245, 232, 206); 
+    border-bottom: 3px solid rgb(245, 232, 206);
+    padding: 50px;
+    opacity:  0.9;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+    
+}
+
+.p1 {
+    background-color: rgb(182, 235, 216);
+    font-family:'Times New Roman', Times, serif;
+    color: darkblue;
+    margin-bottom: 30px;
+}
+
+.p2 {
+    background-color:#DAF7A6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgreen;
+    margin-bottom: 30px;
+}
+
+h3, h2 {
+    font-size: 20;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslategray;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 1px black;
+}
+
+li em{
+    font-size: 20px;
+}
+
+dt {
+    font-size: 20px;
+}
+
+.prueba1 {
+    width: 100%;
+    height: 30px;
+    border: 1px solid goldenrod;
+    overflow: scroll;
+}
+
+.prueba2 {
+    display: none;
+    visibility: hidden;
+}
+
+#presentacion {
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.5em;
+    text-align: center;
+    border: 3px dotted goldenrod;
+    position: relative;
+
+ }
+ 
+
+
+
+  /**********************************************/
+ /*                 BOTONES                    */
+/**********************************************/
+
+button {
+    height: 20px; 
+}
+
+#enviar {
+    float: left;
+    width: 50%;
+}
+
+#reset {
+    display: inline;
+    float: right;
+    width: 50%;
+}
+
+.subir {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 80px;
+    filter: drop-shadow(1px 1px 1px white);
+}
+
+#indice ul li a:link{
+    background: url(../imagenes/ojopre1.png) no-repeat;
+    background-size: 30px;
+    padding: 5px;
+    display: block;
+    padding-left: 35px;
+}
+#indice ul li a:hover{
+    background: url(../imagenes/ojo1.png) no-repeat;
+    background-size: 30px;
+    padding: 5px;
+    display: block;
+    padding-left: 35px;
+}
+
+.boton:link {
+    background: palegreen;
+    border: darkslategray 5px outset;
+    text-decoration: none;
+}
+.boton:active{
+    background: rgb(111, 202, 111);
+    border: darkslategray 5px inset;
+    text-decoration: none;
+
+}
+
+
+
+
+  /**********************************************/
+ /*                IMAGENES                    */
+/**********************************************/
+img {
+    opacity: 1;
+}
+
+.galeria img{
+    margin:10px;
+    width: 250px;
+    padding: auto;
+}
+
+.fizq {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.fdcha {
+    float: right;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.galeria {
+    width: 100%;
+}
+
+
+
+
+
+  /**********************************************/
+ /*                  MENU                      */
+/**********************************************/
+
+nav {
+    position: fixed;
+    margin: auto;
+    right: 25%;
+    top: 0;
+    z-index: 100;
+}
+
+.menu ul, .menu li {
+	margin: 0;
+	padding: 0;
+
+}
+.menu ul {
+	background: darkslategray;
+	list-style: none;
+	width: 100%;
+}
+.menu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.menu a {
+	background: darkslategray;
+	color: #FFFFFF;
+    font-size: 1em;
+    text-transform: uppercase;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.menu li:hover a {
+	background: #000000;
+}
+.submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 100;
+}
+.menu li:hover > .submenu ul{
+	opacity: 1;
+	top: 40px;	
+	visibility: visible;
+}
+
+
+
+
+  /**********************************************/
+ /*               ARREGLITOS                   */
+/**********************************************/
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+.clear {
+    clear: both;
+}

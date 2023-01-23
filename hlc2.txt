@@ -1,0 +1,36 @@
+Temas
+    1.- Desarrollo web: framewoks.
+    2.- Desarrollo web: juegos.
+    4.- Bootstrap (Ver apartado 5).
+    5.- jQuery (Ver apartado 5).
+
+HTML (responsive)
+    header
+    nav
+        section
+        article
+    aside
+    footer
+
+    - formularios:
+        input
+            type=”text”
+            type=”radio”
+            type=”checkbox”
+            type=”hidden”
+            type=”button”
+            textarea
+        
+        select
+        button
+        submit 
+        option (especifica una de las opciones seleccionables. Si tiene definido el atributo default, será la
+        por defecto nada más cargar el formulario. Si tiene definido el atributo , el valor de éste será el enviado en
+        los datos del formulario aunque se muestre otro texto)
+
+        control de campos vacios con input pattern y JS
+        shortcut icon
+
+CSS (externo)
+    usar etiquetas / id / class
+    
