@@ -3,14 +3,13 @@
 /**********************************************/
 /*
                 1. CONTENIDO
-                2. FORMULARIO
+                2. //FORMULARIO
                 3. BOTONES
                 4. IMAGENES
                 5. MENU
-                6. TABLA
+                6. BARRAS LATERALES
                 7. ARREGLITOS
 */
-
 
 
 
@@ -20,7 +19,7 @@
 /**********************************************/
 
 body {
-    background-image: url(../imagenes/fondo2.jpg) ;
+    background-image: url(../imagenes/fondo4.png) ;
     background-repeat: repeat-y;
     background-size: 100%;
 }
@@ -35,7 +34,7 @@ div:not(.contenido, .form) {                       /* todo div que no sea conten
 .contenido {
     max-width: 900px;
     min-width: 350px;
-    margin: 50px auto 0px;
+    margin: 10% auto 0px;
     background-size: contain;
     background-color: rgb(245, 232, 206);
     border: 1px solid rgb(245, 232, 206); 
@@ -70,6 +69,25 @@ h3, h2 {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     text-shadow: 1px 1px 1px black;
+}
+
+h2::before {
+    display: block; 
+    content: " "; 
+    visibility: hidden; 
+    pointer-events: none;
+    margin-top: 10%;
+}
+
+h4 {
+    font-size: 15;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.desc {
+    padding-left: 5%;
 }
 
 li em{
@@ -127,10 +145,11 @@ button {
 
 .subir {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
-    width: 80px;
-    filter: drop-shadow(1px 1px 1px white);
+    bottom: 2%;
+    right: 2%;
+    width: 60px;
+    filter: drop-shadow(1px 1px 1px aquamarine);
+    z-index: 1;
 }
 
 #indice ul li a:link{
@@ -202,8 +221,9 @@ img {
 
 nav {
     position: fixed;
+    display: flex;
     margin: auto;
-    right: 25%;
+    left: 30vw;
     top: 0;
     z-index: 100;
 }
@@ -256,6 +276,57 @@ nav {
 	visibility: visible;
 }
 
+
+
+
+
+  /**********************************************/
+ /*             BARRAS LATERALES               */
+/**********************************************/
+
+.barizq {
+    font-size: medium;
+    color: black;
+    position: fixed;
+    left: 2%;
+    top: 0;
+    border-radius: 20px;    
+    margin: 10% auto 5%;
+    padding: auto;
+    padding-right: 2%;
+    padding-top: 1%;
+    background-size: contain;
+    background-color: rgb(245, 232, 206);
+    opacity: 0.9;
+
+}
+
+.barizq li {
+    margin: auto;
+    margin-top: 5%;
+    color: black;
+}
+
+.barizq li:hover {
+    color: blue;
+}
+
+.barizq li:visited {
+    color: black;
+}
+
+.titulillo {
+    margin: 10%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.categoria {
+    margin: 10%;
+    margin-left: -10%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
 
 
