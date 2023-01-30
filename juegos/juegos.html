@@ -17,7 +17,7 @@
         <a name="top"></a>
         <!-- flecha volver al top -->
         <a href="#top">
-            <img class="subir" src="imagenes/flecha.png" alt="volver arriba">
+            <img class="subir" src="../imagenes/flecha.png" alt="volver arriba">
         </a>
 
         <!-- Menu superior -->
@@ -35,46 +35,342 @@
         <div class="contenido">
             </br>
             <h1 align="center">
-                <em>HLC - 2</em>
+                <em>Desarrollo Web: Juegos</em>
             </h1>
+            <a name="intro"></a>
             </br>
             <h2>
                 <em>
-                    Contenido
+                    ¿Qu&eacute; es JavaScript?;
                 </em>
             </h2>
             <p>
-                <ul>
+                <b>JavaScript es el lenguaje de programación encargado de dotar de mayor interactividad y dinamismo a las páginas web</b>. Cuando JavaScript se 
+                ejecuta en el navegador, no necesita de un compilador. <b>El navegador lee directamente el código, sin necesidad de terceros</b>. Por tanto, se 
+                le reconoce como uno de los tres lenguajes nativos de la web junto a HTML (contenido y su estructura) y a CSS (diseño del contenido y su 
+                estructura).
+            </p>
+            <p>
+                <b>No conviene confundir JavaScript con Java, que es un lenguaje de programación muy diferente</b>. La confusión proviene del nombre, registrado 
+                por la misma empresa creadora de Java (Sun Microsystems). JavaScript (JS) se creó posteriormente, y la empresa norteamericana lo que hizo 
+                simplemente fue cambiar el nombre que le habían puesto sus creadores al comprar el proyecto (LiveScript). El lenguaje de programación Java 
+                está orientado a muchas más cosas que la web desde sus inicios.
+            </p>
+            <a name="utilidades"></a>
+            </br>
+            <h2>
+                <em>
+                    ¿Para qu&eacute; sirve JavaScript?;
+                </em>
+            </h2>
+            <p>
+                Con este lenguaje de programación del lado del cliente (no en el servidor) <b>podemos crear efectos y animaciones sin ninguna interacción</b>, 
+                o respondiendo a eventos causados por el propio usuario tales como botones pulsados y modificaciones del DOM (document object model). 
+                Por tanto, nada tiene que ver con el lenguaje de programación Java, ya que su principal función es ayudar a crear páginas webs dinámicas.
+            </p>
+            <p>
+                <b>El código de programación de JavaScript se ejecuta en los navegadores, ya sean de escritorio o móviles, ya sean Android o Iphone</b>. Sirve 
+                para exactamente lo mismo, da igual en el tipo de dispositivo que se ejecute el navegador.
+            </p>
+            <p>
+                <b>JavaScript es capaz de detectar errores en formularios, de crear bonitos sliders que se adapten a cualquier pantalla, de hacer cálculos 
+                matemáticos de forma eficiente, de modificar elementos de una página web de forma sencilla</b>. Pero también JS es el encargado de que existan 
+                herramientas como Google Analytics, Google Tag Manager, Facebook Pixel y tantas otras, que son claros ejemplos de JavaScript.
+            </p>
+            <p>
+                <b>Existe una tecnología llamada AJAX que permite intercambiar información con el servidor sin tener que recargar la página</b>. Es decir, sólo 
+                cargamos de la página lo necesario. Esta tecnología desarrollada en JavaScript ha supuesto uno de los principales avances en el desarrollo 
+                web. Aunque no la sepamos reconocer, es la encargada de que podamos conseguir más mensajes, tweets, emails…sólo pulsando un botón, sin 
+                tener que recargar la página.
+            </p>
+            <p>
+                <b>JavaScript ahora mismo es el lenguaje más popular</b>. De hecho, <b>desde hace años se ha creado una versión que es capaz de ser ejecutada también 
+                en el lado del servidor (Node JS)</b>. Por tanto, ahora mismo se ejecuta JavaScript en los navegadores y en los servidores, creando a su alrededor 
+                una amplísima comunidad de desarrolladores casi full-stack. JavaScript del lado del servidor compite en igualdad de condiciones con PHP, por 
+                ejemplo.
+            </p>
+            <p>
+                Como casi todo lenguaje de programación, podemos hacer programación orientada a objetos en JavaScript. Sin duda alguna, la forma en la que se 
+                crean, modifican y se muestran los objetos en el navegador ha sido uno de los grandes causantes de su auge.
+            </p>
+            <p>
+                En la actualidad existen algunas prácticas, no demasiado recomendadas por los SEO, donde JS se encarga de numerosas funciones de estilo. Por 
+                ejemplo, muchos temas y plugins de WordPress utilizan scripts para hacer responsive el diseño web. Los navegadores modernos interpretan esto 
+                sin problemas, pero es posible que la araña de Google piense que no es la mejor manera de hacerlo.
+            </p>
+            <p>
+                <b>La librería de JavaScript más utilizada en la historia, y que todavía se sigue utilizando es jQuery</b>. Con jQuery podíamos hacer más cosas, 
+                escribiendo menos. Con una sintaxis mucho más sencilla, podíamos modificar nuestro sitio web, crear plugins, animar videojuegos y muchas 
+                cosas más. En la actualidad, jQueey ha perdido espacio en favor otras tecnologías más modelas como React o Angular.
+            </p>
+            <a name="juego"></a>
+            </br>
+            <h2>
+                <em>
+                    Crear juego con Javascript
+                </em>
+            <img src="imagenes/phaser.png" alt="bienvenida" class="fdcha"/>
+            </h2>
+            <p>
+                Vamos a adentrarnos en el desarrollo de videojuegos con <b>Javascript</b>. Haremos uso del framework <b>Phaser</b>, 
+                con el que podremos crear juegos con html y javascript, que pueden ser ejecutados en navegadores, móviles y escritorios.
+            </p>
+            <a name="estructura"></a>
+            </br>
+            <h2>
+                <em>
+                    Estructura del proyecto
+                </em>
+            </h2>
+            <p>        
+                Para comenzar, haremos uso del editor que queramos y un servidor local para correr nuestra aplicación como si fuera una 
+                web. La estructura que tendrá nuestro proyecto, será la siguiente:
+            </p>
+            <img src="imagenes/estructura_phaser.png" alt="estructura" class="fconten"/>
+            <p>
+                <ul class="puntitos">
                     <li>
-                        Desarrollo web: framewoks
+                        <b>Index.html:</b> Este archivo estará en la raíz de nuestro proyecto y será dónde se cargará nuestro juego.                        
                     </li>
                     <li>
-                        Desarrollo web: juegos
+                        <b>src:</b> En esta carpeta, que también se encuentra en la raiz de nuestro proyecto, junto a index.html, guardaremos las imágenes 
+                        y js que utilizaremos.
                     </li>
                     <li>
-                        Bootstrap
+                        <b>img:</b> Contedra el background y los sprites (las imagens del personaje que vamos a crear) de nuestro juego.
                     </li>
                     <li>
-                        jQuery
+                        <b>js:</b> En esta carpeta tendremos el archivo js del framework, junto al estado de nuestro juego y el archivo main.js que veremos 
+                        más adelante.
+                    </li>
+                </ul>
+            </p>
+            <a name="desarrollo"></a>
+            </br>
+            <h2>
+                <em>
+                    Desarrollando nuestro juego
+                </em>
+            </h2>
+            
+            <p>
+
+            </p>
+            </br>
+            <h4>index.html</h4>
+            <p>
+                Como hemos dicho anteriormente, aquí es donde se cargará nuestro juego, para ello, lo único que vamos a hacer será añadir la 
+                referencia a los archivos .js que utilizaremos:
+            </p>
+            <img src="imagenes/index.png" alt="index.html" class="fconten"/>
+            
+            </br>
+            <h4>main.js</h4>
+            <p>
+                En este archivo, vamos a dirigir la estructura de nuestro juego, es decir, le daremos un ancho y un largo a nuestro juego, 
+                añadiremos los estados de éste y además le indicaremos el estado con el que arrancará la aplicación:
+            </p>
+            <img src="imagenes/main.png" alt="main.html" class="fconten"/>
+            </br>
+            <h4>stateMain.js</h4>
+            <p>
+                Y en este archivo, es dónde comenzaremos con el desarrollo de nuestro juego, con la lógica de la pantalla. stateMain será nuestro 
+                estado principal, los juego se componen de estados (pantallas), como por ejemplo, el estado de menu, el estado de game over, etc. 
+                Al ser éste un artículo de introducción trabajaremos con un solo estado, que será el propio juego.                
+            </p>
+            <p>
+                Para comenzar, crearemos StateMain que contendra una serie de funciones que utilizaremos para diferentes tareas en nuestro juego:
+                </br>
+                <ul class="puntitos">
+                    <li>
+                        <b>preload:</b> se precargará el contenido de nuestro juego. (cargaremos las imágenes de nuestro background, de nuestro personaje…)
+                    </li>
+                    <li>
+                        <b>create:</b> Haremos uso del contenido precargado para ponerlo en nuestro juego (background en el fondo, dónde colocamos a nuestra 
+                        personaje al inicio, la física del juego, etc)
+                    </li>
+                    <li>
+                        <b>update:</b> Esta función se ejecutará en cada frame del juego, añadiremos por ejemplo el control de nuestro personaje, indicándole 
+                        que hace un botón en concreto… es decir, las interacciones de los objetos.
+                    </li>
+                </ul>
+                Y vamos a añadir, una función speed, antes de update, que utilizaremos en update. La función speed no es una función predefinida 
+                por el framework, si no que la hemos creado para darle una lógica al juego, y como ésta, podemos crear más funciones y con el 
+                nombre que queramos.                
+            </p>
+            <img src="imagenes/stateMain.png" alt="stateMain.js" class="fconten"/>
+            </br>
+            <h4>función preload: Cargando nuestras imagenes</h4>
+            <p>
+                En la función preload, como ya hemos dicho, vamos a poner a nuestra disposición las imagenes que tendrá nuestro juego. Vamos a precargar 
+                el background y nuestro sprite.
+            </p>            
+            <img src="imagenes/preload.png" alt="preload" class="fconten"/>
+            <p>
+                Para ello, hacemos uso de la variable game, que la creamos en nuestro archivo main.js.
+                <ul class="puntitos">
+                    <li>
+                        <b>En la primera linea, cargamos nuestro background</b> y añadimos dos parametros, el primero sería el nombre que vamos a utilizar para 
+                        llamar a esta imagen en el juego y el segundo sería la ruta dónde se encuentra nuestra imagen en el proyecto.
+                    </li>
+                    <li>
+                        <b>En la segunda linea, añadimos</b> con la función spritesheet, <b>el sprite de nuestro personaje</b>, y su ruta, pero aparte, añadimos 3 
+                        parametros más. El pirmer parametro indica el ancho que tiene cada sprite en nuestra imagen, el segundo, la altura y el tercero, 
+                        el número de sprite que tiene nuestra imagen.
+                    </li>
+                </ul>
+            </p>
+            <img src="imagenes/sprite.png" alt="imagenes" class="fconten"/>
+            <p>
+                Como podemos ver, en la imagen de nuestros sprite, tenemos dos sprites y le indicamos, que la dimensión de cada uno es de 445×285. 
+            </p>
+            <h4>Función create: Añadiendo nuestros sprites y sus propiedades</h4>
+            <p>
+                Antes de comenzar con esta función, que es dónde veremos más contenido, debemos entender como funciona la escena de nuestros juegos.
+            </p>
+            <p>
+                Al ser un juego en 2D, tenemos dos coordenadas, que serían X <b>(ANCHO DE LA PANTALLA)</b> e Y <b>(ALTURA DE LA PANTALLA)</b>.
+            </p>
+            <img src="imagenes/fondo.webp" alt="fondo" class="fconten"/>
+            <p>
+                En la esquina superior izquierda, vemos 0, 0, esta sería la posición 0 X y 0 Y. Es decir, <b>si queremos que nuestro personaje este 
+                más hacia la derecha, deberíamos aumentar su X</b> y de la misma forma, <b>si queremos que nuestro personaje este más abajo, deberíamos 
+                aumentar la Y</b>.
+            </p>
+            <p>
+                Ahora que sabemos esto, podemos comenzar a ver nuestra función create:
+            </p>
+            <img src="imagenes/1.png" alt="codigo1" class="fconten"/>
+            <p>
+                Primero, añadiriamos esta línea, que <b>activa la fisica en nuestro juego</b>, para que nuestro juego tenga gravedad.
+            </p>
+            <img src="imagenes/2.png" alt="codigo2" class="fconten"/>
+            <p>
+                <b>Añadimos el background</b>, diciendole que ocupe el ancho y el alto de la pantalla, y por ultimo el nombre de nuestro background definido 
+                en la función preload.
+            </p>
+            <img src="imagenes/3.png" alt="codigo3" class="fconten"/>
+            <p>
+                Creamos una variable plane, para poder acceder a las propiedades de nuestro personaje, le añadimos la coordenada X e Y donde queramos que 
+                aparezca y el nombre que le añadimos en preload.
+            </p>
+            <img src="imagenes/4.png" alt="codigo4" class="fconten"/>
+            <p>
+                Ahora, con esta propiedad, <b>escalamos nuestra imagen de nuestro personaje para que se más pequeña</b>, por ejemplo, 0.5 sería la mitad de su tamaño real.
+            </p>
+            <img src="imagenes/5.png" alt="codigo5" class="fconten"/>
+            <p>
+                Aqui, le <b>añadimos una animación, que será la que vaya cambiando con el 1º y 2º sprite</b> para dar un efecto de rotación de la hélice de la avioneta.
+                <ul class="puntitos">
+                    <li>
+                        El primer parametro es el nombre de la animacion que crearemos.
+                    </li>
+                    <li>
+                        Después un array la posición de la imagen, donde 0 es la primera y 1 la segunda.
+                    </li>
+                    <li>
+                        El tercer parametro es la velocidad de frame que queremos que vaya cambiando.
+                    </li>
+                    <li>
+                        Y por último, si queremos que la imagen vaya cambiando en bucle.
+                    </li>
+                </ul>
+            </p>
+            <img src="imagenes/6.png" alt="codigo6" class="fconten"/>
+            <p>
+                En esta linea <b>activamos la animación</b> para que empiece desde el principio.
+            </p>
+            <img src="imagenes/7.png" alt="codigo7" class="fconten"/>
+            <p>
+                Con la <b>función autoscroll</b> lo que hacemos es que la <b>imagen del background tenga un efecto de movimiento</b> y lo que hacemos es restarle -100 a X.
+            </p>
+            <img src="imagenes/8.png" alt="codigo8" class="fconten"/>
+            <p>
+                En esta linea, indicamos que queremos que le afecte la gravedad a nuestro sprite.
+            </p>
+            <a name="movimiento"></a>
+            </br>
+            <h2>
+                <em>
+                    Función speed: añadiendo movimiento a nuestro personaje
+                </em>
+            </h2>
+            <p>
+                Como hemos dicho antes, esta función no es del framework, si no que la hemos creado nosotros, y como ésta podemos crear más con en nombre que queramos.
+            </p>
+            <p>
+                Bien, <b>speed la vamos a utilizar en la función update, para que nuestro personaje pueda volar</b>, para ello vamos a añadirle esta linea a nuestra función speed:
+            </p>
+            <img src="imagenes/9.png" alt="codigo9" class="fconten"/>
+            <p>
+                Como vemos, lo que hará esta función, es modificar la velocidad de la Y en nuestro personaje. Cuando arranquemos el juego, nuestro personaje por la gravedad irá hacia abajo, esto significa que su posición Y se irá incrementando, con esta función lo que hacemos es que nuestro personaje haga una especie de salto cuando se active.
+            </p>
+            <p>
+                Ahora vamos a aprender como activarla en nuestro juego, en la función update.
+            </p>
+            <a name="update"></a>
+            </br>
+            <h2>
+                <em>
+                    Funcion update: La lógica de nuestro juego
+                </em>
+            </h2>
+            <p>
+                Esta función se va a ejecutar por frame en nuestro juego, por lo que se ejecutará todo en bucle, una y otra vez en milésimas de segundos.
+            </p>
+            <p>
+                Añadimos estás lineas de código:
+            </p>
+            <img src="imagenes/update.png" alt="update" class="fconten"/>
+            <p>
+                En la <b>condición del if, le estamos indicando, que si hacemos un click con nuestro ratón, se ejecutará la función speed y en la siguiente linea, le damos una 
+                gravedad</b> en la posición Y de 500.
+            </p>
+            <p>
+                ¡De esta forma ya podríamos probar nuestro juego!
+            </p>
+            <p>
+                Pero podemos mejorarlo un poco más, ya que cuando llega tanto arriba como abajo, nuestro personaje desaparece.
+            </p>
+            <a name="mejoras"></a>
+            </br>
+            <h2>
+                <em>
+                    Pequeñas mejoras en nuestro juego.
+                </em>
+            </h2>
+            <p>
+                Vamos a bloquear a nuestro personaje tanto la parte superior de arriba como la de abajo, para que siempre este visible en pantalla, 
+            </p>
+            <p>
+                Para ello añadiremos estas variables a nuestra función create:
+            </p>
+            <img src="imagenes/mejora1.png" alt="mejora1" class="fconten"/>
+            <p>
+                y en la función update, modificaremos nuestro código anterior, por este:
+            </p>
+            <img src="imagenes/mejora2.png" alt="mejora2" class="fconten"/>
+            <p>
+                Aquí, veremos nuevas condiciones:
+                <ul class="puntitos">
+                    <li>
+                        La primera, es la que ya hemos explicado anterormente, si clickamos, se ejecuta la función speed.
+                    </li>
+                    <li>
+                        la segunda, contra la posición y de nuestro personaje y si es menos que la variable top (que hemos incializado a 0), significaría que nuestro personaje esta 
+                        apunto de salirse de la pantalla hacía arriba, entonces lo bloquemaos dandole la posición 0 todo el tiempo, hasta que se deje de cumplir la condicion (es 
+                        decir, que este por debajo del limite)
+                    </li>
+                    <li>
+                        La tercera condición, bloquea al personaje para que no pueda irse más abajo del juego, de la misma forma inicializamos su posición Y a la de la variable bottom, 
+                        pero esta, queda más arriba que el limite ya que le hemos restado 160 en su inicialización. También le inicializamos su gravedad a 0.
+                    </li>
+                    <li>
+                        Y la 4 condición sería si se encontrase dentro de la pantalla, dónde su gravedad será la que debe tener en todo el juego.
                     </li>
                 </ul>
             </p>
             </br>
-            <h2>
-                <em>
-                    Desarrolladores
-                </em>
-            </h2>
-            <p>        
-                <ul>
-                    <li>
-                        Rafael Mart&iacute;n Serrano
-                    </li>
-                    <li>
-                        Paula Balsera L&oacute;pez
-                    </li>
-                </ul>            
-            </p>
         </div>
     
         <!-- Barra lateral izquierda -->
@@ -84,17 +380,30 @@
             </span>
             <ul>
                 <li>
-                    <a href="#intro">Introducci&oacute;n</a>       
+                    <a href="#intro">¿Qu&eacute; es JavaScript?;</a>       
                 </li>
                 <li>
-                    <a href="#frameworks">Que son los Frameworks?</a>       
+                    <a href="#utilidades">¿Para qu&eacute; sirve JavaScript?</a>       
                 </li>
                 <li>
-                    <a href="#destacados">Frameworks destacados</a>       
+                    <a href="#juegos">Crear juego con Javascript</a>       
                 </li>
                 <li>
-                    <a href="#elegir">Qu&eacute; Framework elegir?</a>       
+                    <a href="#estructura">Estructura del proyecto</a>       
                 </li>
+                <li>
+                    <a href="#desarrollo">Desarrollando el juego</a>       
+                </li>
+                <li>
+                    <a href="#movimiento">Movimiento del personaje</a>       
+                </li>
+                <li>
+                    <a href="#update">La lógica del juego</a>       
+                </li>
+                <li>
+                    <a href="#estructura"></a>       
+                </li>
+
             </ul>
         </aside>
     </body>
