@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- icono -->
+  <link rel="icon" href="../imagenes/favi.png" type="image/png" />
+
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <style>
+      .botones {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+    </style>
+    <title>Mi página con Bootstrap y JavaScript</title>
+  </head>
+  <body>
+    <header class="bg-success text-white py-3">
+        <div class="container">
+          <p class="text-center font-weight-bold">Desarrollador: Rafael Martín Serrano</p>
+        </div>
+    </header>
+    <div class="container">
+      <h1 class="text-center mt-5">Bienvenido a mi página</h1>
+      <br/>
+      <p>
+        Esta es una página básica que utiliza Bootstrap y JavaScript para mejorar
+        su aspecto y funcionalidad.
+      </p>
+      <br/>
+      <h2>Ejemplos varios</h2>
+      <br/>
+      <h3>Checkbox y Opciones multiples</h3>
+      <br/>
+      <select class="form-select" multiple aria-label="multiple select example">
+        <option selected>Menu de opciones multiples:</option>
+        <option value="1">Opcion 1</option>
+        <option value="2">Opcion 2</option>
+        <option value="3">Opcion 3</option>
+      </select>
+      <br/><br/><br/>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Default checkbox
+        </label>
+      </div>
+
+      
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          Checked checkbox
+        </label>
+      </div>
+      <br/>
+
+      <h3>Cartas</h3>
+      <br/><br/>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="Imagenes/cartaboot.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pagina Web</h5>
+          <p class="card-text">Puedes Volver a la pagina usando el link de abajo</p>
+          <a href="../index.html" class="btn btn-primary">Volver a la pagina</a>
+        </div>
+        </div>
+        <br/><br/>
+        <h3>Mensajes de alerta con iconos</h3>
+        <br/><br/>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </symbol>
+            <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+            </symbol>
+            <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </symbol>
+          </svg>
+          
+          <div class="alert alert-primary d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+            <div>
+              Un ejemplo de alerta con icono
+            </div>
+          </div>
+          <div class="alert alert-success d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+            <div>
+              Un ejemplo de correcto con icono  
+             
+            </div>
+          </div>
+          <div class="alert alert-warning d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+            <div>
+              Un ejemplo de aviso con icono
+            </div>
+          </div>
+          <div class="alert alert-danger d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+            <div>
+              Un ejemplo de peligro con icono
+            </div>
+          </div>
+          <br/><br/>
+
+        <h3>Form</h3>  
+          <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Escribe tu opinion</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <br/><br/>
+      <div class="botones text-center">
+        <button class="btn btn-danger" onclick="decrementar()">
+          <span class="fas fa-thumbs-down"></span> No me gusta
+        </button>
+        <button class="btn btn-primary">
+          <span class="far fa-meh"></span> Imparcial
+        </button>
+        <button class="btn btn-success" onclick="incrementar()">
+          <span class="fas fa-thumbs-up"></span> Likesito
+        </button>
+      </div>
+      
+      <p id="contador" class="text-center">0</p>
+    </div>
+    <br/><br/><br/>
+    
+    <footer class="bg-success text-white py-3">
+        <div class="container">
+          <p class="text-center font-weight-bold">Desarrollador: Rafael Martín Serrano</p>
+        </div>
+      </footer>
+    <script>
+      // Inicializar el contador en 0
+      let contador = 0;
+
+      // Función para disminuir el contador
+      function decrementar() {
+        contador--;
+        document.getElementById("contador").innerHTML = contador;
+      }
+
+      // Función para aumentar el contador
+      function incrementar() {
+        contador++;
+        document.getElementById("contador").innerHTML = contador;
+      }
+    </script>

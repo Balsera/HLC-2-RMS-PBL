@@ -8,7 +8,13 @@
         <!-- titulo -->
         <title> HLC - 2 </title>
         <!-- CSS -->
-        <link rel="stylesheet" href="../estilos/style.css">        
+        <link rel="stylesheet" href="../estilos/style.css"> 
+        <!-- Buscador -->
+        <div id="bq">
+        <form action="" autocomplete="on">
+            <input id="busqueda" name="busqueda" type="text" placeholder="Buscar..."><input id="buscar" value="Buscar" type="submit">
+        </form>
+        </div>       
     </head>
 
     <!-- Cuerpo -->
@@ -34,52 +40,86 @@
         <!-- Contenido de la pagina -->
         <div class="contenido">
         </br>
-        <div class="boostrap">
-		
-		</div>
+        
         <h1 align="center">
-            <em>HLC - 2</em>
+            <em>Bootstrap</em>
+            <a name ="intro"></a>
         </h1>
         </br>
+       
         <h2>
             <em>
-                Contenido
+              Introducci&oacute;n
 				
             </em>
         </h2>
         <p>
-            <ul>
-                <li>
-                    Desarrollo web: framewoks
-					
-                </li>
-                <li>
-                    Desarrollo web: juegos
-                </li>
-                <li>
-                    Bootstrap
-                </li>
-                <li>
-                    jQuery
-                </li>
-            </ul>
+          <img src="Imagenes/introducionBootstrap.png" alt="bootstrap" class="fdcha"/>
+          Bootstrap es un framework de diseño de c&oacute;digo abierto que se utiliza para el desarrollo de sitios web y aplicaciones m&oacute;viles.
+                   Fue creado por Twitter y se basa en HTML, CSS y JavaScript. Bootstrap proporciona un conjunto de componentes preconstruidos y estilos de diseño que hacen m&aacute;s f&aacute;cil
+                    y r&aacute;pido el desarrollo de p&aacute;ginas web con un aspecto profesional. Adem&aacute;s, Bootstrap es altamente personalizable y se adapta bien a diferentes tipos de dispositivos y pantallas.
         </p>
         </br>
+
         <h2>
             <em>
-                Desarrolladores
+              <a name ="ventajasBootstrap"></a>
+               Ventajas de usar Bootstrap
+            </em>
+            
+        </h2>
+        <p>
+            Puede parecer que introducir script en tu web es un mundo
+            pero Bootstrap agiliza todo el proceso de aprendizaje de esta manera:
+
+            <ul class="puntitos">
+                <li><b>F&aacute;cil de usar:</b> si tienes conocimientos b&aacute;sicos de HTML y CSS puede comenzar a usar Bootstrap cuando quieras. </a></li>
+                <li><b>Mobile-first:</b> es un framework que sigue la pauta mobile-first. Primero se diseña para m&oacute;vil y despu&eacute;s se adapta al resto de dispositivos.</li>
+                <li><b>Responsive:</b> gracias a sus CSS tu diseño se adaptar&aacute; a cualquier dispositivo.</li>
+                <li><b>Multinavegador:</b>Bootstrap 4 es compatible con todos los navegadores modernos (Chrome, Firefox, Internet Explorer 10+, Safari y Opera).</li>             
+            </ul>
+            <img src="Imagenes/boot2.jfif" alt="bootstrap2" class="fconten"/>
+        </p>
+
+        <h2>
+            <em>
+              <a name ="instalacionBootstrap"></a>
+               Instalacion
+               
             </em>
         </h2>
-        <p>        
-        <ul>
-            <li>
-                Rafael Mart&iacute;n Serrano
-            </li>
-            <li>
-                Paula Balsera L&oacute;pez
-            </li>
-        </ul>            
+        <br/>
+        <img src="Imagenes/usoboot.jfif" alt="bootstrap2" class="fizq"/>
+        <P>
+            Con Bootstrap únicamente tienes que relacionar sus scripts y hojas de estilo en la cabecera del código HTML de tu web.
+             Existen dos formas de hacerlo: desde una CDN (Content Delivery Network) o descargando los archivos de la página oficial y añadiéndolos al hosting de tu sitio.
+             Hay diferentes formas de configurarlo o estructurarlo para usarlo en una aplicación web. Sin embargo, para que funcione correctamente, es necesario agregar las bibliotecas JQuery y Popper.js, necesarias para la ejecución de algunos componentes de Bootstrap.
+            
+        </P>
+        <br/>
+        <p>
+            Es tan sencillo como descargar los archivos desde página web, luego poner la ruta donde los tienes alojados en tu HTML. En la web del framework también te indican cómo instalarlos desde consola.
+            es la mejor opción, ya que no dependerás de terceros para proporcionar los archivos necesarios que necesita tu web para su correcta visualización.
         </p>
+        <br/>
+        <h2>
+          <em>
+            <a name ="ejemplosUso"></a>
+             Ejemplos de uso
+          </em>
+      </h2>
+      <p>
+        Para empezar a usar Bootstrap solo necesitas copiar y pegar c&oacute;digo prediseñado en tu html:
+        <a href="ejemploboostrap.html" target="_blank">Ejemplo</a>
+    </p>
+        <p class = "fdcha">
+            <em>
+                Desarrollador: Rafael Mart&iacute;n Serrano.
+                
+            </em>
+            
+        </p>
+        
     </div>
     <!-- Barra lateral izquierda -->
     <aside class="barizq">
@@ -91,13 +131,14 @@
               <a href="#intro">Introducci&oacute;n</a>       
           </li>
           <li>
-              <a href="#frameworks">Que son los Frameworks?</a>       
-          </li>
+            <a href="#ventajasBootstrap">Ventajas</a>       
+            </li>
           <li>
-              <a href="#destacados">Frameworks destacados</a>       
+              <a href="#instalacionBootstrap">Instalacion</a>       
           </li>
+          
           <li>
-              <a href="#elegir">Qu&eacute; Framework elegir?</a>       
+              <a href="#ejemplosUso">Ejemplo</a>       
           </li>
       </ul>
   </aside>

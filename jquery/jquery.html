@@ -8,7 +8,13 @@
         <!-- titulo -->
         <title> HLC - 2 </title>
         <!-- CSS -->
-        <link rel="stylesheet" href="../estilos/style.css">        
+        <link rel="stylesheet" href="../estilos/style.css">   
+         <!-- Buscador -->
+         <div id="bq">
+            <form action="" autocomplete="on">
+                <input id="busqueda" name="busqueda" type="text" placeholder="Buscar..."><input id="buscar" value="Buscar" type="submit">
+            </form>
+            </div>          
     </head>
 
     <!-- Cuerpo -->
@@ -37,45 +43,83 @@
         <h1 align="center">
             <em>HLC - 2</em>
         </h1>
-        </br>
+        </br></br>
+        <img src="imagenes/jQuery1.png" alt="jQuery" class="fconten"/>
+
         <h2>
             <em>
-                Contenido
+            <a name ="intro"></a>
+              Introducci&oacute;n
+				
             </em>
         </h2>
         <p>
-            <ul>
-                <li>
-                    Desarrollo web: framewoks
-                </li>
-                <li>
-                    Desarrollo web: juegos
-                </li>
-                <li>
-                    Bootstrap
-                </li>
-                <li>
-                    jQuery
-                </li>
-            </ul>
+            jQuery es una biblioteca de JavaScript que hace más fácil la manipulación de HTML,
+             la creación de animaciones y la gestión de eventos en páginas web. Ofrece una sintaxis
+              abreviada y simplificada para realizar tareas comunes de JavaScript de manera más eficiente.
+               Con jQuery, los desarrolladores pueden crear aplicaciones web más interactivas y atractivas para los usuarios.
         </p>
+        <img src="imagenes/ejemplo2.jfif" alt="ejemplo1jQuery" class="fconten"/>
         </br>
         <h2>
             <em>
-                Desarrolladores
+                <a name ="ventajas"></a>
+                Ventajas de usar JQuery
             </em>
         </h2>
-        <p>        
-            <ul>
-                <li>
-                    Rafael Mart&iacute;n Serrano
-                </li>
-                <li>
-                    Paula Balsera L&oacute;pez
-                </li>
-            </ul>            
+        <p>Principales ventajas de utilizar jQuery:</p>
+        <ul class="puntitos">
+            <li>
+                <strong>Fácil de aprender:</strong> jQuery tiene una sintaxis intuitiva y fácil de aprender, lo que lo hace ideal para desarrolladores con poca experiencia en JavaScript.
+              </li>
+              <li>
+                <strong>Abreviado y simplificado:</strong> jQuery permite realizar tareas comunes de JavaScript de manera más eficiente, utilizando una sintaxis abreviada y simplificada.
+              </li>
+              <li>
+                <strong>Cross-browser compatibility:</strong> jQuery se asegura de que el código funcione de manera consistente en diferentes navegadores, lo que ahorra tiempo y esfuerzo al desarrollador.
+              </li>
+              <li>
+                <strong>Gran comunidad y recursos en línea:</strong> jQuery cuenta con una gran comunidad de desarrolladores y una amplia cantidad de recursos en línea, lo que lo hace ideal para el aprendizaje y la resolución de problemas.
+              </li>
+              <li>
+                <strong>Aumenta la productividad:</strong> jQuery permite realizar tareas de manera más rápida y sencilla, lo que aumenta la productividad del desarrollador.
+              </li>
+              <li>
+                <strong>Mejora la experiencia de usuario:</strong> jQuery permite crear páginas web más interactivas y atractivas para los usuarios, mejorando así su experiencia en línea.
+              </li>
+          </ul>
+          <h2>
+            <em>
+                <a name ="desventajas"></a>
+                Desventajas de usar JQuery
+            </em>
+           </h2>
+        <p>Principales desventajas de jQuery:</p>
+        <br/>
+        <ul class="puntitos">
+          <li><strong>Peso del archivo: </strong>jQuery es una biblioteca grande y su archivo de descarga es significativo en términos de tamaño, lo que puede ralentizar la carga de la página.</li>
+          <li><strong>Rendimiento: </strong> Aunque jQuery es muy eficiente, algunas operaciones pueden ser más lentas en comparación con la programación nativa.</li>
+          <li><strong>Dependencia: </strong>jQuery depende de JavaScript para funcionar, lo que significa que si el usuario desactiva JavaScript en su navegador, no se podrán realizar muchas de las funciones de jQuery.</li>
+          <li><strong>Sobrecarga de código: </strong>Algunos desarrolladores abusan de la simplicidad de jQuery y escriben código que es más largo y complicado de lo necesario, lo que resulta en una sobrecarga de código y una mayor dificultad para mantener el proyecto.</li>
+          <li><strong>Desactualización: </strong>A medida que evolucionan las tecnologías web, es posible que algunas características y funciones de jQuery ya no sean compatibles con versiones más recientes del navegador o estándares web.</li>
+        </ul>
+        <p class = "fdcha">
+            <em>
+                Desarrollador: Rafael Mart&iacute;n Serrano.
+            </em>
+            
         </p>
+        <h2>
+            <em>
+                <a name ="ejemplos"></a>
+                Ejemplo de uso
+            </em>
+           </h2>
+           <p>Pincha en el siguiente enlace: <a href="ejemplojquery.html" target="_blank"> Ejemplo</a></p>
+           
+        
     </div>
+    
     <!-- Barra lateral izquierda -->
     <aside class="barizq">
         <span class="titulillo">
@@ -86,14 +130,15 @@
                 <a href="#intro">Introducci&oacute;n</a>       
             </li>
             <li>
-                <a href="#frameworks">Que son los Frameworks?</a>       
+                <a href="#ventajas">Ventajas</a>       
             </li>
             <li>
-                <a href="#destacados">Frameworks destacados</a>       
+                <a href="#desventajas">Desventajas</a>       
             </li>
             <li>
-                <a href="#elegir">Qu&eacute; Framework elegir?</a>       
+                <a href="#ejemplos">Ejemplo</a>       
             </li>
+           
         </ul>
     </aside>
     </body>

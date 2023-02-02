@@ -1,0 +1,116 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- icono -->
+  <link rel="icon" href="../imagenes/favi.png" type="image/png" />
+
+  </div>    
+  <title>Formulario</title>
+  <style>
+    .form-section {
+      margin: 20px 0;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("form").submit(function(event) {
+        var formData = $(this).serializeArray();
+        var formDataLength = formData.length;
+        var isValid = true;
+
+        for (var i = 0; i < formDataLength; i++) {
+          if (!formData[i].value) {
+            isValid = false;
+            break;
+          }
+        }
+
+        if (!isValid) {
+          alert("Por favor, llene todos los campos");
+          event.preventDefault();
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Formulario</h1>
+    <p>Desarrollador: Rafael Martín Serrano</p>
+  </header>
+
+  <form action="#">
+    <div class="form-section">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name">
+    </div>
+
+    <div class="form-section">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+    </div>
+
+    <div class="form-section">
+      <label for="gender">Género:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Masculino</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Femenino</label>
+    </div>
+
+    <div class="form-section">
+      <label for="country">País:</label>
+      <select id="country" name="country">
+        <option value="">Seleccione un país</option>
+        <option value="argentina">Argentina</option>
+        <option value="chile">Chile</option>
+        <option value="colombia">Colombia</option>
+        <option value="mexico">México</option>
+        <option value="peru">Perú</option>
+        <option value="uruguay">Uruguay</option>
+        <option value="venezuela">Venezuela</option>
+      </select>
+    </div>
+
+    <div class="form-section">
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+
+    <div class="form-section">
+      <input type="submit" value="Enviar">
+    </div>
+  </form>
+
+  <footer>
+    <p>Desarrollador: Rafael Martín Serrano</p>
+  </footer>
+</body>
+</html>
